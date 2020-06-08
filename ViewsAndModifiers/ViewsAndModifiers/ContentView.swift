@@ -36,6 +36,8 @@ struct ContentView: View {
             Color.blue
                 .frame(width: 300, height: 200)
                 .watermarked(with: "Hacking with Swift")
+            Text("Large Title")
+                .largeBlueTitle()
         }
     }
 }
@@ -88,6 +90,20 @@ struct Watermark: ViewModifier {
 extension View {
     func watermarked(with text: String) -> some View {
         self.modifier(Watermark(text: text))
+    }
+}
+
+struct LargeBlueTitle: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .font(.largeTitle)
+            .foregroundColor(.blue)
+    }
+}
+
+extension View {
+    func largeBlueTitle() -> some View {
+        self.modifier(LargeBlueTitle())
     }
 }
 
