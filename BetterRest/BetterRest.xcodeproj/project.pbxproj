@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA572E0B24AD839300A12F95 /* SleepCalculator.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = FA572E0A24AD839300A12F95 /* SleepCalculator.mlmodel */; };
 		FAC7499A24AAE142004F9606 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC7499924AAE142004F9606 /* AppDelegate.swift */; };
 		FAC7499C24AAE142004F9606 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC7499B24AAE142004F9606 /* SceneDelegate.swift */; };
 		FAC7499E24AAE142004F9606 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC7499D24AAE142004F9606 /* ContentView.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA572E0A24AD839300A12F95 /* SleepCalculator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SleepCalculator.mlmodel; sourceTree = "<group>"; };
 		FAC7499624AAE142004F9606 /* BetterRest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetterRest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC7499924AAE142004F9606 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAC7499B24AAE142004F9606 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				FAC7499F24AAE143004F9606 /* Assets.xcassets */,
 				FAC749A424AAE143004F9606 /* LaunchScreen.storyboard */,
 				FAC749A724AAE143004F9606 /* Info.plist */,
+				FA572E0A24AD839300A12F95 /* SleepCalculator.mlmodel */,
 				FAC749A124AAE143004F9606 /* Preview Content */,
 			);
 			path = BetterRest;
@@ -148,6 +151,7 @@
 			files = (
 				FAC7499A24AAE142004F9606 /* AppDelegate.swift in Sources */,
 				FAC7499C24AAE142004F9606 /* SceneDelegate.swift in Sources */,
+				FA572E0B24AD839300A12F95 /* SleepCalculator.mlmodel in Sources */,
 				FAC7499E24AAE142004F9606 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
