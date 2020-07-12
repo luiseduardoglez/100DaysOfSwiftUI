@@ -17,6 +17,16 @@ struct ContentView: View {
     @State private var errorMessage = ""
     @State private var showingError = false
 
+    var score: Int {
+        var value = usedWords.count
+
+        for word in usedWords {
+            value += word.count
+        }
+
+        return value
+    }
+
     var body: some View {
         NavigationView {
             VStack {
@@ -29,9 +39,11 @@ struct ContentView: View {
                     Image(systemName: "\($0.count).circle")
                     Text($0)
                 }
+                Text("Score: \(score)")
             }
             .navigationBarTitle(rootWord)
-            .onAppear(perform: startGame)
+            .navigationBarItems(trailing: Button("Restart", action: startGame))
+            .onAppear(perform: loadWords)
             .alert(isPresented: $showingError) {
                 Alert(title: Text(errorTitle), message: Text(errorMessage), dismissButton: .default(Text("OK")))
             }
@@ -67,6 +79,11 @@ struct ContentView: View {
     }
 
     func startGame() {
+        loadWords()
+        usedWords = []
+    }
+
+    func loadWords() {
         // 1. Find the URL for start.txt in our app bundle
         if let startWordsURL = Bundle.main.url(forResource: "start", withExtension: "txt") {
             // 2. Load start.txt into a string
@@ -76,7 +93,6 @@ struct ContentView: View {
 
                 // 4. Pick one random word, or use "silkworm" as a sensible default
                 rootWord = allWords.randomElement() ?? "silkworm"
-                print(rootWord)
                 // If we are here everything has worked, so we can exit
                 return
             }
@@ -105,6 +121,10 @@ struct ContentView: View {
     }
 
     func isReal(word: String) -> Bool {
+        if word.count < 3 || rootWord == word {
+            return false
+        }
+
         let checker = UITextChecker()
         let range = NSRange(location: 0, length: word.utf16.count)
         let misspelledRange = checker.rangeOfMisspelledWord(in: word, range: range, startingAt: 0, wrap: false, language: "en")
