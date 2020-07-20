@@ -13,6 +13,10 @@
 		FA22D25224BE8D6800386408 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA22D25124BE8D6800386408 /* Assets.xcassets */; };
 		FA22D25524BE8D6800386408 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA22D25424BE8D6800386408 /* Preview Assets.xcassets */; };
 		FA22D25824BE8D6800386408 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA22D25624BE8D6800386408 /* LaunchScreen.storyboard */; };
+		FAEFCA2B24C5CDBC00B2DF43 /* GesturesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEFCA2A24C5CDBC00B2DF43 /* GesturesView.swift */; };
+		FAEFCA2D24C5D16000B2DF43 /* CombinedAnimationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEFCA2C24C5D16000B2DF43 /* CombinedAnimationsView.swift */; };
+		FAEFCA2F24C5D2FE00B2DF43 /* ShowHideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEFCA2E24C5D2FE00B2DF43 /* ShowHideView.swift */; };
+		FAEFCA3124C5D4F500B2DF43 /* CornerRotateModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEFCA3024C5D4F500B2DF43 /* CornerRotateModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		FA22D25424BE8D6800386408 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FA22D25724BE8D6800386408 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA22D25924BE8D6800386408 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAEFCA2A24C5CDBC00B2DF43 /* GesturesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GesturesView.swift; sourceTree = "<group>"; };
+		FAEFCA2C24C5D16000B2DF43 /* CombinedAnimationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinedAnimationsView.swift; sourceTree = "<group>"; };
+		FAEFCA2E24C5D2FE00B2DF43 /* ShowHideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowHideView.swift; sourceTree = "<group>"; };
+		FAEFCA3024C5D4F500B2DF43 /* CornerRotateModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRotateModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,10 @@
 				FA22D25624BE8D6800386408 /* LaunchScreen.storyboard */,
 				FA22D25924BE8D6800386408 /* Info.plist */,
 				FA22D25324BE8D6800386408 /* Preview Content */,
+				FAEFCA2A24C5CDBC00B2DF43 /* GesturesView.swift */,
+				FAEFCA2C24C5D16000B2DF43 /* CombinedAnimationsView.swift */,
+				FAEFCA2E24C5D2FE00B2DF43 /* ShowHideView.swift */,
+				FAEFCA3024C5D4F500B2DF43 /* CornerRotateModifier.swift */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -148,6 +160,10 @@
 			files = (
 				FA22D24C24BE8D6500386408 /* AppDelegate.swift in Sources */,
 				FA22D24E24BE8D6500386408 /* SceneDelegate.swift in Sources */,
+				FAEFCA3124C5D4F500B2DF43 /* CornerRotateModifier.swift in Sources */,
+				FAEFCA2D24C5D16000B2DF43 /* CombinedAnimationsView.swift in Sources */,
+				FAEFCA2F24C5D2FE00B2DF43 /* ShowHideView.swift in Sources */,
+				FAEFCA2B24C5CDBC00B2DF43 /* GesturesView.swift in Sources */,
 				FA22D25024BE8D6500386408 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
